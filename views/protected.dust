@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <link rel="stylesheet" href="/resources/rules.css">
+    <script src="/resources/change.js"></script>
+</head>
+
+<body>
+    <h1 id="header">Your profile</h1>
+    <button type="button">Click Me!</button>
+    {>navigation /}
+<br>
+    <img id="prof" height="70" src="{profile_image_url}"/>
+    {#status}
+    <div class="left">
+    <p id="p1"> Hello {screen_name}! <br>
+        Favorited {favourites_count} tweets. <br>
+        Following {friends_count} users. <br>
+        <br>
+    
+    </p>
+    </div>
+    <br>
+    <p class="left">Your most recently tweeted tweet is</p>
+
+    <p>
+        <div class="links">
+
+            {>linkedTweet screen_name=screen_name id_str=id_str text=text /}
+    
+        </div>
+    
+    </p>
+    <p class="left">
+        This tweet has {retweet_count} retweets.
+    
+    </p>
+        {/status}
+</body>
+
+</html>

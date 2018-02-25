@@ -1,0 +1,6 @@
+<nav>
+        <a class="button container" href="/home">Recent Tweets</a>
+        <a class="button container" href="/csc365">Top Tweets</a>
+        <a class="button container" href="/protected">Profile</a>
+        <a class="button container" href="/auth/logout">Logout</a>  
+</nav>

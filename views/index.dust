@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CSC365 Final</title>
+    <link rel="stylesheet" href="/resources/rules.css">
+</head>
+
+<body>
+    <div id="login">
+        <img id="t1" height="100" src="/resources/twitter.png"/>
+        <h1 id="log">Twitter #CSC365</h1>
+        <img id="t2" height="100" src="/resources/twitter2.png"/>
+    </div>
+    <div id="loginbutton">
+    <p>Please sign in to view tweets!</p>
+    <p>
+        <a class="button container" href="/auth/twitter">Log In</a>
+    </p>
+    </div>
+</body>
+
+</html>

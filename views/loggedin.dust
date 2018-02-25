@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Logged in</title>
+    <link rel="stylesheet" href="resources/rules.css">
+    <script src="resources/change.js"></script>
+</head>
+
+    <body>
+
+        <h1 id="header">Welcome!</h1>
+        <button type="button">Click Me!</button>
+        {>navigation /}
+
+        <p>
+            You're logged in! Please click on one of the buttons above to move between pages.
+        </p>
+
+        {#search_metadata}
+        <p>
+            These are {count} of the most recent tweets with the hashtag CSC365.
+
+        </p>
+        {/search_metadata}
+        <div class="links">
+            {#statuses}
+                {>linkedTweet screen_name=user.screen_name id_str=id_str text=text /}
+            {/statuses}
+        </div>
+    </body>
+
+</html>

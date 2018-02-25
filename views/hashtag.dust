@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tweets</title>
+    <link rel="stylesheet" href="/resources/rules.css">
+    <script src="resources/change.js"></script>
+</head>
+
+<body>
+    <h1>A Look into 365</h1><img id="ghostie" height="60" src="/resources/ghostie.png"/>
+    <button type="button">Click Me!</button>
+    {>navigation /}
+    {#search_metadata}
+    <p>
+        These are the most liked tweets out of {count} of the most recently tweeted tweets. Click on the tweet to like it.
+    </p>
+    {/search_metadata}
+    <div class="links">
+        {#statuses}
+            {>likedTweet id_str=id_str text=text /}
+        <p id="liked">This tweet has {favorite_count} likes</p>
+       {/statuses}
+    </div>
+    
+</body>
+
+</html>

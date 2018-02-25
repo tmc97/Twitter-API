@@ -1,0 +1,1 @@
+<a href="https://twitter.com/intent/favorite?tweet_id={id_str}">{text}</a>
